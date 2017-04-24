@@ -1,0 +1,130 @@
+chapter8.html
+
+フォームとデータを送受信する仕組み
+
+フォームは<form>タグと、ユーザーの入力を受け付けるテキストフィールドやチェックボックスなどを表示するフォーム部品タグを組み合わせて作成します。フォーム部品タグには<input>,<textarea>,<select>など数種類あり、用途に合わせて使い分けます。
+
+<form>タグとその属性
+<form>タグはフォーム全体を囲むタグです。
+<form>タグのaction属性にはユーザが入力したデータが送信される先のURLを
+指定します。
+<form>タグの実際の使用例
+<form action="mailform.php" method="post">
+           データの送信先のURLやパス
+
+<input>タグはフォーム部品を表示するためのタグです。この<input>タグは、type属性の値を変えることにより、さまざまなフォーム部品を表示することができます。type属性がtype="text"のときは、テキストフィールドが表示される。
+
+<label>タグ
+<label>はフォーム部品にラベルをつけるためのタグ
+<label>タグとフォーム部品の関連付けがされていると、ラベルをクリックすればそのフォーム部品を選択できるようになる。ユーザビリティとアクセシビリティのどちらの観点からも必ず<label>を使ってラベルを用意し、フォーム部品と関連づけるようにしましょう。
+<label>とフォーム部品を関連づける方法は２通りある。
+<label>タグのfor属性に、関連づけたいフォーム部品のid属性を指定する方法と
+<label>~~~~~~</label>で囲む
+書式例
+<label for="name-field">お名前</label>
+<input type="text" name="name" id="name-field">
+
+required属性
+<input>など、フォーム部品のタグにはrequired属性をつけることができる。required属性はその項目が入力必須であることを示しユーザーが入力せずに送信ボタンをクリックすると警告が表示される。
+
+required属性に設定する値はありません。required属性がタグに含まれていればそのフォームは部品は必須入力項目になる。
+
+required属性のように設定する値がないものをブール属性という。
+
+フォーム関連タグの主なブール属性
+
+checked  この属性がついたチェックボックス、ラジオボタンは、ページが読み込まれた時にははじめからチェックがついた状態で表示される
+使い方　<input type="checkbox"checked>
+
+selected この属性がついたプルダウンメニューの<option>タグは、ページが読み込まれた時にははじめから選択された状態で表示される
+使い方　<select>
+        <option>検索条件</option>
+        <option selected>速さ優先</option>
+        <option>交通費優先</option>
+        <option>経路のバリアフリー優先</option>
+       </select>
+
+autofocus この属性がついたフォーム部品は、ページが読み込まれた時から入力可能な状態で表示される
+使い方　<input type="text" autofocus>
+
+disabled この属性がついたフォーム部品には入力ができなくなる。javascriptなどと組み合わせて使われる、
+使い方　<input type="text" disabled>
+
+パスワードやメールアドレスや電話番号をinputタグに書く
+<form action="#">
+	<p><label for="pw-field">パスワード</label><br>
+	<input type="password" name="pw" id="pw-field"></p>
+	<p><label for="email-field">メールアドレス</label><br>
+	<input type="email" name="email" id="email-field"></p>
+	<p><label for="tel-field">お電話番号</label><br>
+	<input type="tel" name="tel" id="tel-field"></p>
+	<p><label for="number-field">目標回数</label><br>
+	<input type="number" name="number" id="number-field">回</p>
+
+テキストエリアのサイズはCSSのwidthプロパティ、heightプロパティで簡単に調整できる。
+
+ラジオボタンとチェックボックスも１つの設問に対して通常は２つ以上の選択項目を用意するので、<p>ではなく<ul>,<li>でマークアップするのが良い
+<!-- ラジオボタン -->
+	<ul class="input-group">
+		<li>
+			<input type="radio" name="duration" id="r1" value="1" checked><label for="r1">いますぐ出発</label>
+		</li>
+	</ul>
+	<!-- チェックボックス -->
+	<ul class="input-group">
+		<li>
+			<input type="checkbox" name="option" id="c1" value="1" checked><label for="c1">特急を優先</label>
+		</li>
+	</ul>
+
+
+送信ボタン　
+<inoput type="submit" name="submit" value="ボタンに表示されるテキスト">
+
+<form action="#">
+	<p><input type="submit" value="送信する" id="submit" name="submit"></p>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
