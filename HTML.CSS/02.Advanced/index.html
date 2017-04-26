@@ -7,24 +7,24 @@
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 	<body>
-		<header id="sectionone"> 
-			<div class="sectionone-logo">Web designer's portfolio</div>
+		<header class ="header"> 
+			<p class="sectionone-logo">Web designer's portfolio</p>
 			<h1 class="name">HI,MY NAME IS...</h1>
-			<p class="contents-item">check out some of my works</p>
+			<p class="check-works">check out some of my works</p>
 			<div class="buttons">
 				<a class="button" href="#about">LEARN MORE</a>	
-				<a class="button2" href="#contact">SEND MESSAGE</a>
+				<a class="button button-normal" href="#contact">SEND MESSAGE</a>
 			</div>
     	</header>
-    	<section class="sectiontwo"> <div id="about"></div>
-    		<h2 class="about-me">ABOUT ME</h2>
-    		<p>はじめまして。日本でWebデザイナーをしています。</p>
-    		<p>デザインの専門学校を卒業し、制作会社での業務経験を経て、現在フリーランスとして働いています。</p>
-    		<br><p>このサイトは「HTML/CSS モダンコーティング」という書籍のサンプルとして作られた、架空のWebデザイナーのポートフォリオサイトです。</p>
-    		<p>このサンプルのようなサイトをいちから作る過程を通して、HTMLとCSSの実践的なコーディングノウハウを学ぶことができます。</p></br>
+    	<section class="main-section section-about" id="about"> 
+    		<h2 class="about-me">ABOUT ME</h2> 
+    		<p>はじめまして。日本でWebデザイナーをしています。<
+    		   デザインの専門学校を卒業し、制作会社での業務経験を経て、現在フリーランスとして働いています。</p>
+    		<br><p>このサイトは「HTML/CSS モダンコーティング」という書籍のサンプルとして作られた、架空のWebデザイナーのポートフォリオサイトです。
+    		このサンプルのようなサイトをいちから作る過程を通して、HTMLとCSSの実践的なコーディングノウハウを学ぶことができます。</p></br>
     	</section> 
-    	<section class="sectionthree">
-    		<h3 class="works">WORKS</h3>
+    	<section class="main-section section-works">
+    		<h3 class="works-category">WORKS</h3>
     		<div class="contents-item">
     			<p>ひとつめの制作事例が入ります。</p>
     			<p>簡単な説明が入ります。</p>
@@ -54,44 +54,53 @@
     			<img src="images/sky.jpg" alt="pic4">
     		</div>
     	</section>
-    	<section class="sectionfour">
+    	<section class="main-section section-skills">
     		<h4 class="my-skills">MY SKILLS</h4>
-    		<div class="skill-linking"></div>
-    		<div class="skill-box"></div>
-    		<div class="contents-item">f0eb</div>
-    		<div class="skill-title">IDEA</div>
-    		<p class="skill-text">
-    			<br>何かを考えることが好きです。</br>
-    			<br>新しいことを思いついては試しています。</br>
-    			<br>ディレクションの経験もあります。</br>
-    		</p>
-    		<div class="skill-linking"></div>
-    		<div class="skill-box"></div>
-    		<div class="contents-item">f1fc</div>
-    		<div class="skill-title">DESIGN</div>
-    		<p class="skill-text">
-    			<br>見た目の綺麗さだけじゃなくて、</br>
-    			<br>使いやすさ、情報の伝わりやすさなど、</br>
-    			<br>その先まで考えることを意識しています。</br>
-			</p>
-			<div class="skill-linking"></div>
-			<div class="skill-box"></div>
-			<div class="contets-item">f121</div>
-			<div class="skill-title">CODING</div>
-			<p class="skill-text">
-				<br>HTML/CSSコーディングも行います。</br>
-				<br>正しく美しいマークアップと、</br>
-				<br>今後の変更への強さを考慮しています。</br>
-			</p>
+    		<div class="skill-linking">
+    			<div class="skill-box">
+    				<p class="idea-icon">f0eb</p>
+    				<div class="skill-title">IDEA</div>
+    				<p class="skill-text">
+    					何かを考えることが好きです。
+    					新しいことを思いついては試しています。
+    					ディレクションの経験もあります。
+    				</p>
+    			</div>
+    			<div class="skill-box"></div>
+    				<p class="design-icon">f1fc</p>
+    				<div class="skill-title">DESIGN</div>
+    				<p class="skill-text">
+    					見た目の綺麗さだけじゃなくて、
+    					使いやすさ、情報の伝わりやすさなど、
+    					その先まで考えることを意識しています。
+					</p>
+				</div>
+				<div class="skill-box">
+					<div class="skill-icon">f121</div>
+					<div class="skill-title">CODING</div>
+					<p class="skill-text">
+						HTML/CSSコーディングも行います。
+						正しく美しいマークアップと、
+						今後の変更への強さを考慮しています。
+					</p>
+				</div>
+			</div>
     	</section>	
-		<section class="sectionfive">
+		<section class="main-section section-contact" id="contact">
 			<h5 class="contact-form">CONTACT</h5>
-			<br><input class="contact-name" type="text" name="NAME"></br>
-			<br><input class="contact-message" type="text" name="MESSAGE"></br>
-			<br><input class="contact-submit" type="text" name="SEND"></br>
+			<input class="contact-name" type="text" value="NAME">
+			<input class="contact-message" type="text" value="MESSAGE">
+			<input class="contact-submit" type="text" value="SEND">
 		</section>
 	</body>
 	<footer class="footer">
-		© sample site
+		<p><small>© sample site</small></p>
 	</footer>
 </html>
+
+
+
+
+
+
+
