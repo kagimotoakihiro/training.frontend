@@ -7,14 +7,14 @@
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 	<body>
-		<header class ="header"> 
+		<header class ="header-top"> 
 			<p class="sectionone-logo">Web designer's portfolio</p>
 			<h1 class="name">HI,MY NAME IS...</h1>
 			<p class="check-works">check out some of my works</p>
-			<div class="buttons">
-				<a class="button" href="#about">LEARN MORE</a>	
-				<a class="button button-normal" href="#contact">SEND MESSAGE</a>
-			</div>
+			<div class="button-icon">
+				<a class="button-learn" href="#about">LEARN MORE</a>	
+            <a class="button-learn button-message" href="#contact">SEND MESSAGE</a>
+            </div>
     	</header>
     	<section class="main-section section-about" id="about"> 
     		<h2>ABOUT ME</h2> 
@@ -26,83 +26,76 @@
     	<section class="main-section section-works">
     		<h3>WORKS</h3>
     		<div class="works-wrapper">
-                <dir class="contents-tree">
-                    <p>ひとつめの制作事例が入ります。</p>
-                    <p>簡単な説明が入ります。</p>
-                    <p>使用ツール:XXX、XXX、XXX</p>
+                <ul class="contents-tree">
+                    <li><p>ひとつめの制作事例が入ります。</p></li>
+                    <li><p>簡単な説明が入ります。</p></li>
+                    <li><p>使用ツール:XXX、XXX、XXX</p></li>
                     <a class="button-works" href="#sectionone">READ MORE</a>
                     <img src="/images/tree.jpg" alt="pic1">
-    	        </div>
-                <div class="contents-building">
-                    <p>ふたつめの制作事例が入ります。</p>
-                    <p>簡単な説明が入ります。</p>
-                    <p>使用ツール:XXX、XXX、XXX</p>
+    	        </ul>
+                <ul class="contents-building">
+                    <li><p>ふたつめの制作事例が入ります。</p></li>
+                    <li><p>簡単な説明が入ります。</p></li>
+                    <li><p>使用ツール:XXX、XXX、XXX</p></li>
                     <a class="button-works" href="#sectionone">READ MORE</a>
                     <img src="/images/building.jpg" alt="pic2">
-                </div>
-                <div class="contents-lake">
-                    <p>みっつめの制作事例が入ります。</p>
-                    <p>簡単な説明が入ります。</p>
-                    <p>使用ツール:XXX、XXX、XXX</p>
-                    <a class="button-works" href="#sectionone">READ MORE</a>
+                </ul>
+                <ul class="contents-lake">
+                    <li><p>みっつめの制作事例が入ります。</p></li>
+                    <li><p>簡単な説明が入ります。</p></li>
+                    <li><p>使用ツール:XXX、XXX、XXX</p></li>
+                    <li><a class="button-works" href="#sectionone">READ MORE</a>
                     <img src="/images/lake.jpg" alt="pic3">
-                </div>
-                <div class="contents-sky">
-                    <p>よっつめの制作事例が入ります。</p>
-                    <p>簡単な説明が入ります。</p>
-                    <p>使用ツール:XXX、XXX、XXX</p>
+                </ul>
+                <ul class="contents-sky">
+                    <li><p>よっつめの制作事例が入ります。</p></li>
+                    <li><p>簡単な説明が入ります。</p></li>
+                    <li><p>使用ツール:XXX、XXX、XXX</p></li>
                     <a class="button-works" href="#sectionone">READ MORE</a>
                     <img src="images/sky.jpg" alt="pic4">
-                </div>
+                </ul>
             </div>
     	</section>
     	<section class="main-section section-skills">
-    		<h2>MY SKILLS</h2>
+    		<h2>MY SKILLS</h2> 
     		<div class="skill-linking">
-    			<div class="skill-box">
-    				<p class="idea-icon">f0eb</p>
+    			<p class="skill-box">
+    				<div class="idea-icon">f0eb</p>
     				<div class="skill-title">IDEA</div>
-    				<p class="skill-text">
-    					何かを考えることが好きです。
-    					新しいことを思いついては試しています。
-    					ディレクションの経験もあります。
-    				</p>
-    			</div>
-    			<div class="skill-box"></div>
-    				<p class="design-icon">f1fc</p>
+    				<ul class="skill-text">
+    					<li><p>何かを考えることが好きです。</p></li>
+    					<li><p>新しいことを思いついては試しています。</p></li>
+    					<li><p>ディレクションの経験もあります。</p></li>
+    				</ul>
+    			</p>
+    			<p class="skill-box">
+    				<div class="design-icon">f1fc</div>
     				<div class="skill-title">DESIGN</div>
-    				<p class="skill-text">
-    					見た目の綺麗さだけじゃなくて、
-    					使いやすさ、情報の伝わりやすさなど、
-    					その先まで考えることを意識しています。
-					</p>
-				</div>
-				<div class="skill-box">
+    				<ul class="skill-text">
+    					<li><p>見た目の綺麗さだけじゃなくて、</p></li>
+    					<li><p>使いやすさ、情報の伝わりやすさなど、</p></li>
+    					<li><p>その先まで考えることを意識しています。</p></li>
+					</ul>
+				</p>
+				<p class="skill-box">
 					<div class="skill-icon">f121</div>
 					<div class="skill-title">CODING</div>
-					<p class="skill-text">
-						HTML/CSSコーディングも行います。
-						正しく美しいマークアップと、
-						今後の変更への強さを考慮しています。
-					</p>
-				</div>
+					<ul class="skill-text">
+						<li><p>HTML/CSSコーディングも行います。</p></li>
+						<li><p>正しく美しいマークアップと、</p></li>
+						<li><p>今後の変更への強さを考慮しています。</p></li>
+					</ul>
+				</p>
 			</div>
     	</section>	
 		<section class="main-section section-contact" id="contact">
 			<h3>CONTACT</h3>
-			<input class="contact-name" type="text" value="NAME">
-			<input class="contact-message" type="text" value="MESSAGE">
-			<input class="contact-submit" type="text" value="SEND">
+			<input class="contact-name" type="text" value="NAME" placeholder="NAME">
+			<textarea name="message" placeholder="MESSAGE"></textarea>
+			<input type="submit" value="SEND">
 		</section>
 	</body>
 	<footer class="footer">
 		<p><small>© sample site</small></p>
 	</footer>
 </html>
-
-
-
-
-
-
-
