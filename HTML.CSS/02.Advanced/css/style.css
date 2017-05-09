@@ -447,13 +447,16 @@ h3:before {
 	display: block;
 	width: 100%;
 	padding: 15px;
+	outline: none;
 	margin-bottom: 10px;
 	border: 1px solid rgba(225, 255, 255, 0.4);
 	border-radius: 0;
 	background-color: rgba(225, 225, 225, 0.05);
 	color: #FFFFFF;
 	font: inherit;
-} 
+}
+
+
 
 .contact-form textarea {
 	height: 150px;
@@ -472,6 +475,10 @@ h3:before {
 	font: inherit;
 }
 
+.contact-form input[type=text]:focus,
+.contact-form textarea:focus {
+	box-shadow: 0 0 8px rgba(255, 255, 255, 0.5) inset;
+}
 
 .contact-form input[type=submit]:hover {
 	background-color: rgba(255, 255, 255, 0.05);
